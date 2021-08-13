@@ -11,7 +11,7 @@ mainContainer.addEventListener("click", clickEvent => {
         const userNumberOfAttendees = document.querySelector("input[name='numberOfChildren']").value
         const userAddress = document.querySelector("input[name='serviceAddress']").value
         const userReservationDate = document.querySelector("input[name='reservationDate']").value
-        const userReservationLength = document.querySelector("input[name='reservationLength]").value
+        const userReservationLength = document.querySelector("input[name='reservationLength']").value
 
         // Make an object out of the user input
         const dataToSendToAPI = {
