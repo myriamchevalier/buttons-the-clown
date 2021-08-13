@@ -14,6 +14,24 @@ export const fetchRequests = () => {
         )
 }
 
+export const sendRequest = (userReservationRequest) => {
+    const fetchOptions = {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(userReservationRequest)
+    }
+
+
+    return fetch(`${API}/requests`, fetchOptions)
+        .then(res => res.json())
+        .then(() => {
+            mainContainer.dispatchEvent(new CustomEvent("stateChanged"))
+        })
+}
+
+
 export const getRequests = () => {
     applicationState.requests.map(request => ({...request}))
 }
