@@ -13,3 +13,7 @@ export const fetchRequests = () => {
             }
         )
 }
+
+export const getRequests = () => {
+    applicationState.requests.map(request => ({...request}))
+}
