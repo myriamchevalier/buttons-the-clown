@@ -5,7 +5,7 @@ import { ButtonsTheClown } from "./ButtonsTheClown.js"
 const mainContainer = document.querySelector("#container")
 
 
-const render = () => {
+const renderHTML = () => {
     fetchRequests().then(
         () => {
             mainContainer.innerHTML = ButtonsTheClown()
@@ -16,8 +16,9 @@ const render = () => {
 mainContainer.addEventListener(
         "stateChanged",
         customEvent => {
-            render()
+            renderHTML()
+            console.log("State changed, re-render all HTML")
         }
     )
     
-render()
+renderHTML()

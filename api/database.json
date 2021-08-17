@@ -1,5 +1,15 @@
 {
-    "requests": [],
-    "bookings" : [],
-    "clowns": []
+  "requests": [
+    {
+      "parentName": "Blah",
+      "childName": "Blabber",
+      "numberOfChildren": "3",
+      "address": "1000 Bleh Way",
+      "reservationDate": "2021-08-18",
+      "reservationLengthInHours": "3",
+      "id": 1
+    }
+  ],
+  "bookings": [],
+  "clowns": []
 }
