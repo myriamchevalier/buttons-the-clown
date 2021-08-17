@@ -25,7 +25,6 @@ mainContainer.addEventListener("click", clickEvent => {
 
         // Send the data to the API for permanent storage
         sendRequest(dataToSendToAPI)
-        
     }
 })
 

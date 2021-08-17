@@ -3,6 +3,7 @@ const applicationState = {
 }
 
 const API = "http://localhost:8088"
+const mainContainer = document.querySelector("#container")
 
 export const fetchRequests = () => {
     return fetch(`${API}/requests`)
@@ -33,5 +34,5 @@ export const sendRequest = (userReservationRequest) => {
 
 
 export const getRequests = () => {
-    applicationState.requests.map(request => ({...request}))
+    return applicationState.requests.map(request => ({...request}))
 }

@@ -1,3 +1,4 @@
+import { reservationRequests } from "./Requests.js"
 import { ServiceForm } from "./ServiceForm.js"
 
 export const ButtonsTheClown = () => {
@@ -7,6 +8,11 @@ export const ButtonsTheClown = () => {
         <section>
             <h2>Request a reservation</h2>
             ${ServiceForm()}
+        </section>
+
+        <section>
+            <h2>Reservations requested</h2>
+            ${reservationRequests()}
         </section>
     `
 }
