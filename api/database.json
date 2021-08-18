@@ -8,6 +8,33 @@
       "reservationDate": "2021-08-18",
       "reservationLengthInHours": "3",
       "id": 1
+    },
+    {
+      "parentName": "Scott",
+      "childName": "Myriam",
+      "numberOfChildren": "26",
+      "address": "100 NSS Street",
+      "reservationDate": "2021-08-25",
+      "reservationLengthInHours": "2",
+      "id": 2
+    },
+    {
+      "parentName": "Cassie",
+      "childName": "Alicia",
+      "numberOfChildren": "3",
+      "address": "111 Llama Ln",
+      "reservationDate": "2021-08-17",
+      "reservationLengthInHours": "1",
+      "id": 3
+    },
+    {
+      "parentName": "Myriam",
+      "childName": "Travis",
+      "numberOfChildren": "6",
+      "address": "10 Blah Way",
+      "reservationDate": "2021-07-17",
+      "reservationLengthInHours": "4",
+      "id": 4
     }
   ],
   "bookings": [],
