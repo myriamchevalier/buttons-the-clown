@@ -1,4 +1,11 @@
-import { getRequests } from "./dataAccess.js";
+import { deleteRequest, getRequests } from "./dataAccess.js";
+
+document.addEventListener("click", clickEvent =>{
+    if (clickEvent.target.id.startsWith("request--")) {
+        const [, requestId] = clickEvent.target.id.split("--")
+        deleteRequest(parseInt(requestId))
+    }
+})
 
 export const reservationRequests = () => {
     
@@ -13,7 +20,7 @@ export const reservationRequests = () => {
 
     const reservationRequestAsListElement = (request) => {
         return `<li>Party for ${request.childName} on ${request.reservationDate} 
-            <button id="reservationRequest--${request.id}>Delete</button> 
+            <button id="request--${request.id}">Delete</button> 
         </li>`
     }
     

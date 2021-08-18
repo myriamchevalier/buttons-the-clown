@@ -26,15 +26,6 @@
       "reservationDate": "2021-08-17",
       "reservationLengthInHours": "1",
       "id": 3
-    },
-    {
-      "parentName": "Myriam",
-      "childName": "Travis",
-      "numberOfChildren": "6",
-      "address": "10 Blah Way",
-      "reservationDate": "2021-07-17",
-      "reservationLengthInHours": "4",
-      "id": 4
     }
   ],
   "bookings": [],
