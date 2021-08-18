@@ -6,7 +6,7 @@ export const reservationRequests = () => {
    
     // let arrayOfSortedReservations = requests.sort((a,b) => {
     //     return parseInt(a.reservationDate.split("-").join("")) - parseInt(b.reservationDate.split("-").join(""))
-    //     
+        
     
     //^^^array.sort method compares two elements contained in the array.In this case, we are comparing reservationDate key-value pair.
     // 

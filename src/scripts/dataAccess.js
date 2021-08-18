@@ -35,6 +35,15 @@ export const sendRequest = (userReservationRequest) => {
         })
 }
 
+export const deleteRequest = (id) => {
+    return fetch(`${API}/requests/${id}`)
+        .then (
+            () => {
+                mainContainer.dispatchEvent(new CustomEvent("stateChanged"))
+            }
+        )
+}
+
 
 export const getRequests = () => {
     return applicationState.requests.map(request => ({...request}))
