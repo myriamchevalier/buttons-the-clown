@@ -12,7 +12,9 @@ export const reservationRequests = () => {
     // 
 
     const reservationRequestAsListElement = (request) => {
-        return `<li>Party for ${request.childName} on ${request.reservationDate} </li>`
+        return `<li>Party for ${request.childName} on ${request.reservationDate} 
+            <button id="reservationRequest--${request.id}>Delete</button> 
+        </li>`
     }
     
     let html = `
